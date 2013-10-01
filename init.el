@@ -12,3 +12,7 @@
 ;; http://whattheemacsd.com/init.el-01.html#comment-742017081
 ;; Disable mouse-wheel-mode; very annoying.
 (mouse-wheel-mode -1)
+
+;; Default font
+;; http://stackoverflow.com/a/6050987
+(set-default-font "Ubuntu Mono 15")
