@@ -17,3 +17,10 @@
 ;; Default font
 ;; http://stackoverflow.com/a/6050987
 (set-default-font "Ubuntu Mono 15")
+
+(add-to-list 'load-path user-emacs-directory)
+
+;; Packages
+(require 'packages)
+(packages-ensure-installed
+  '(evil))
