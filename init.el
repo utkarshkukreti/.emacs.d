@@ -20,7 +20,7 @@
 ;; Packages
 (require 'packages)
 (packages-ensure-installed
-  '(evil solarized-theme))
+  '(evil solarized-theme yasnippet))
 
 ;; UI
 ;; Solarized Light Theme
