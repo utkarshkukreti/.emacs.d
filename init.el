@@ -25,7 +25,7 @@
 ;; Packages
 (require 'packages)
 (packages-ensure-installed
-  '(evil solarized-theme yasnippet))
+  '(evil solarized-theme yasnippet ido-ubiquitous))
 
 ;; UI
 ;; Solarized Light Theme
@@ -36,3 +36,7 @@
 
 ;; Enable YASnippet globally
 (yas-global-mode 1)
+
+;; Enable ido and ido-ubiquitous modes
+(ido-mode 1)
+(ido-ubiquitous-mode 1)
