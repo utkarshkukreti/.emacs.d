@@ -33,3 +33,6 @@
 ;; Default font
 ;; http://stackoverflow.com/a/6050987
 (set-default-font "Ubuntu Mono 15")
+
+;; Enable YASnippet globally
+(yas-global-mode 1)
