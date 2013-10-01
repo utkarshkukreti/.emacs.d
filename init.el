@@ -14,13 +14,17 @@
 ;; http://whattheemacsd.com/init.el-01.html#comment-742017081
 (mouse-wheel-mode -1)
 
-;; Default font
-;; http://stackoverflow.com/a/6050987
-(set-default-font "Ubuntu Mono 15")
 
 (add-to-list 'load-path user-emacs-directory)
 
 ;; Packages
 (require 'packages)
 (packages-ensure-installed
-  '(evil))
+  '(evil solarized-theme))
+
+;; UI
+;; Solarized Light Theme
+(load-theme 'solarized-light)
+;; Default font
+;; http://stackoverflow.com/a/6050987
+(set-default-font "Ubuntu Mono 15")
