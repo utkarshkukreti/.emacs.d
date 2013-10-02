@@ -34,6 +34,8 @@
     yasnippet
     ;; Enables ido-mode almost everywhere
     ido-ubiquitous
+    ;; IDO for M-x
+    smex
     ;; Better mode line
     powerline
     ;; Auto complete
