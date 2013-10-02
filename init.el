@@ -79,3 +79,6 @@
 
 ;; Make RET indent the new line too
 (define-key global-map (kbd "RET") 'newline-and-indent)
+
+;; Column to show line numbers
+(global-linum-mode t)
