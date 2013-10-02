@@ -41,3 +41,4 @@
 ;; Enable ido and ido-ubiquitous modes
 (ido-mode 1)
 (ido-ubiquitous-mode 1)
+(setq ido-enable-flex-matching t)
