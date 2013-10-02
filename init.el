@@ -71,5 +71,8 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; C-= will expand selection using "expand-region" package
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 ;; Make RET indent the new line too
 (define-key global-map (kbd "RET") 'newline-and-indent)
