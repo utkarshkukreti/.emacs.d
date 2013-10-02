@@ -55,6 +55,9 @@
 ;; http://stackoverflow.com/a/6050987
 (set-default-font "Ubuntu Mono 15")
 (setq show-trailing-whitespace t)
+;; ^ doesn't work for frames opened using emacsclient, fix follows ->
+;; http://stackoverflow.com/a/3985487/320615
+(setq default-frame-alist '((font . "Ubuntu Mono 15")))
 
 ;; Enable YASnippet globally
 (yas-global-mode 1)
