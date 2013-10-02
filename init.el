@@ -25,7 +25,24 @@
 ;; Packages
 (require 'packages)
 (packages-ensure-installed
-  '(evil solarized-theme yasnippet ido-ubiquitous))
+  '(
+    ;; Vim, not using it at the moment though
+    evil
+    ;; UI
+    solarized-theme
+    ;; Snippets
+    yasnippet
+    ;; Enables ido-mode almost everywhere
+    ido-ubiquitous
+    ;; Better mode line
+    powerline
+    ;; Auto complete
+    auto-complete
+    ;; Useful for Lisp-like languages
+    paredit rainbow-delimiters
+    ;; Clojure specific
+    clojure-mode clojure-test-mode nrepl ac-nrepl
+   ))
 
 ;; UI
 ;; Solarized Light Theme
