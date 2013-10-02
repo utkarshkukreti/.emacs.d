@@ -68,3 +68,6 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; Make RET indent the new line too
+(define-key global-map (kbd "RET") 'newline-and-indent)
