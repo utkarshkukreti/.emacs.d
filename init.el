@@ -36,6 +36,8 @@
     ido-ubiquitous
     ;; IDO for M-x
     smex
+    ;; Increase selected region by semantic units
+    expand-region
     ;; Better mode line
     powerline
     ;; Auto complete
