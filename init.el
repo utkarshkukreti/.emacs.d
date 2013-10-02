@@ -67,6 +67,19 @@
 (ido-ubiquitous-mode 1)
 (setq ido-enable-flex-matching t)
 
+;; Goto home directory just by pressing "~" in ido file completion
+;; http://whattheemacsd.com/setup-ido.el-02.html
+(add-hook 'ido-setup-hook
+ (lambda ()
+   ;; Go straight home
+   (define-key ido-file-completion-map
+     (kbd "~")
+     (lambda ()
+       (interactive)
+       (if (looking-back "/")
+           (insert "~/")
+         (call-interactively 'self-insert-command))))))
+
 ;; Use smex as default M-x key binding
 ;; https://github.com/nonsequitur/smex#get-started
 (global-set-key (kbd "M-x") 'smex)
