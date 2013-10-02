@@ -34,6 +34,8 @@
     yasnippet
     ;; Enables ido-mode almost everywhere
     ido-ubiquitous
+    ;; Tree directory explorer
+    direx
     ;; IDO for M-x
     smex
     ;; Increase selected region by semantic units
